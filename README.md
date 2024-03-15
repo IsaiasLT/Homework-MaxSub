@@ -22,3 +22,13 @@ This code defines a function named `max_subarray_sum` which takes a single argum
 
 An example usage of the function is provided where it is called with an input array `arr` and the maximum subarray sum is printed to the console.
 
+def maxsub(arr):
+    maxend = maxsof = arr[0]
+    for i in arr[1:]:
+        maxend = max(i, maxend + i)
+        maxsof = max(maxsof, maxend)
+    return maxsof
+
+arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+print(f"Maximum subarray sum: {maxsub(arr)}")
+
