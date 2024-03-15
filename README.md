@@ -21,7 +21,7 @@ This code defines a function named `max_subarray_sum` which takes a single argum
 ## Example Usage
 
 An example usage of the function is provided where it is called with an input array `arr` and the maximum subarray sum is printed to the console.
-
+```python
 def maxsub(arr):
     maxend = maxsof = arr[0]
     for i in arr[1:]:
